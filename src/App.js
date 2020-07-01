@@ -22,7 +22,7 @@ const onSceneReady = scene => {
 
   // Default intensity is 1. Let's dim the light a small amount
   light.intensity = 0.7;
-
+  
   // Our built-in 'box' shape.
   box = MeshBuilder.CreateBox("box", {size: 2}, scene);
 
