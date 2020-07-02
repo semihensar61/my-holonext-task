@@ -1,6 +1,8 @@
 import React from 'react';
 import { FreeCamera, Vector3, HemisphericLight, MeshBuilder, SceneLoader, Scene } from '@babylonjs/core';
 import SceneComponent from './SceneComponent'; // ^^ point to file we created above or 'babylonjs-hook' NPM.
+// import * as BABYLON from '@babylonjs/core'
+import "@babylonjs/loaders";
 
 let box;
 
@@ -27,8 +29,12 @@ const onSceneReady = scene => {
 //        console.log('-scene----')
 //      // do something with the scene
 //      });
+
+
   
-SceneLoader.ImportMesh("", "../scenes/", "Dude.babylon", scene, meshes => {
+SceneLoader.ImportMesh("", "../scenes/", "Zebra.gltf", scene, meshes => {
+    console.log(meshes);
+    console.log('--------')
     scene.createDefaultCameraOrLight(true, true, true);
     scene.createDefaultEnvironment();
 })
