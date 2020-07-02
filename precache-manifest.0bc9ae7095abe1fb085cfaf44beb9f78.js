@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bae02fa9242bd9dc9db76857b8c41fc3",
+    "revision": "6fa27cf72b2d07a422581ae167d5f2ec",
     "url": "/my-holonext-task-deploy/index.html"
   },
   {
-    "revision": "bf2bb337f36766121c2d",
+    "revision": "e15363e2167233a02c4a",
     "url": "/my-holonext-task-deploy/static/css/main.b6ac47c1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-holonext-task-deploy/static/js/2.4666c410.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bf2bb337f36766121c2d",
-    "url": "/my-holonext-task-deploy/static/js/main.fa67e360.chunk.js"
+    "revision": "e15363e2167233a02c4a",
+    "url": "/my-holonext-task-deploy/static/js/main.12cb67ad.chunk.js"
   },
   {
     "revision": "80f57f231e8ea713d0f0",
