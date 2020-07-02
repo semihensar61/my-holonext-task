@@ -4,6 +4,8 @@ import SceneComponent from './SceneComponent'; // ^^ point to file we created ab
 // import * as BABYLON from '@babylonjs/core'
 import "@babylonjs/loaders";
 
+import './Viewer.css'
+
 let box;
 
 const onSceneReady = scene => {
@@ -60,8 +62,7 @@ const onRender = scene => {
 }
 
 export default () => (
-  <div>
-    <h1>SceneComponent</h1>
+  <div className = "Viewer">
     <SceneComponent antialias onSceneReady={onSceneReady} onRender={onRender} id='my-canvas' />
   </div>
 )

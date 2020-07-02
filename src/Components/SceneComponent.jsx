@@ -1,6 +1,8 @@
 import { Engine, Scene } from '@babylonjs/core'
 import React, { useEffect, useRef, useState } from 'react'
 
+import './SceneComponent.css'
+
 export default (props) => {
     const reactCanvas = useRef(null);
     const { antialias, engineOptions, adaptToDeviceRatio, sceneOptions, onRender, onSceneReady, ...rest } = props;
@@ -51,6 +53,6 @@ export default (props) => {
     }, [adaptToDeviceRatio, antialias, engineOptions, loaded, onRender, props, reactCanvas, scene, sceneOptions])
 
     return (
-        <canvas ref={reactCanvas} {...rest} />
+            <canvas className = "SceneComponent" ref={reactCanvas} {...rest} />
     );
 }
