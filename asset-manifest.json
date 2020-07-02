@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/my-holonext-task-deploy/static/css/main.b6ac47c1.chunk.css",
-    "main.js": "/my-holonext-task-deploy/static/js/main.6c4b4dd1.chunk.js",
-    "main.js.map": "/my-holonext-task-deploy/static/js/main.6c4b4dd1.chunk.js.map",
+    "main.js": "/my-holonext-task-deploy/static/js/main.e7bc43f7.chunk.js",
+    "main.js.map": "/my-holonext-task-deploy/static/js/main.e7bc43f7.chunk.js.map",
     "runtime-main.js": "/my-holonext-task-deploy/static/js/runtime-main.cbc9d50a.js",
     "runtime-main.js.map": "/my-holonext-task-deploy/static/js/runtime-main.cbc9d50a.js.map",
     "static/js/2.4666c410.chunk.js": "/my-holonext-task-deploy/static/js/2.4666c410.chunk.js",
     "static/js/2.4666c410.chunk.js.map": "/my-holonext-task-deploy/static/js/2.4666c410.chunk.js.map",
     "index.html": "/my-holonext-task-deploy/index.html",
-    "precache-manifest.9476d0fb7c3fd14345c471b9916a4af1.js": "/my-holonext-task-deploy/precache-manifest.9476d0fb7c3fd14345c471b9916a4af1.js",
+    "precache-manifest.c5bed0b4c73c4a0feea03b45517c2259.js": "/my-holonext-task-deploy/precache-manifest.c5bed0b4c73c4a0feea03b45517c2259.js",
     "service-worker.js": "/my-holonext-task-deploy/service-worker.js",
     "static/css/main.b6ac47c1.chunk.css.map": "/my-holonext-task-deploy/static/css/main.b6ac47c1.chunk.css.map",
     "static/js/2.4666c410.chunk.js.LICENSE.txt": "/my-holonext-task-deploy/static/js/2.4666c410.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.cbc9d50a.js",
     "static/js/2.4666c410.chunk.js",
     "static/css/main.b6ac47c1.chunk.css",
-    "static/js/main.6c4b4dd1.chunk.js"
+    "static/js/main.e7bc43f7.chunk.js"
   ]
 }
