@@ -29,7 +29,7 @@ const onSceneReady = scene => {
   // Default intensity is 1. Let's dim the light a small amount
   light.intensity = 0.7;
 
-  SceneLoader.ImportMesh("", "../scenes/", "Zebra.gltf", scene, meshes => {
+  SceneLoader.ImportMesh("", "./scenes/", "Zebra.gltf", scene, meshes => {
     scene.createDefaultCameraOrLight(true, true, true);
     scene.createDefaultEnvironment();
   });
