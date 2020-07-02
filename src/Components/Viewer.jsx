@@ -1,12 +1,15 @@
-import React from 'react';
-import { FreeCamera, Vector3, HemisphericLight, MeshBuilder, SceneLoader, Scene } from '@babylonjs/core';
-import SceneComponent from './SceneComponent'; // ^^ point to file we created above or 'babylonjs-hook' NPM.
+import React from "react";
+import {
+  FreeCamera,
+  Vector3,
+  HemisphericLight,
+  SceneLoader,
+} from "@babylonjs/core";
+import SceneComponent from "./SceneComponent"; // ^^ point to file we created above or 'babylonjs-hook' NPM.
 // import * as BABYLON from '@babylonjs/core'
 import "@babylonjs/loaders";
 
-import './Viewer.css'
-
-let box;
+import "./Viewer.css";
 
 const onSceneReady = scene => {
   // This creates and positions a free camera (non-mesh)
@@ -26,43 +29,19 @@ const onSceneReady = scene => {
   // Default intensity is 1. Let's dim the light a small amount
   light.intensity = 0.7;
 
-//    SceneLoader.Append("../scenes/", "skull.babylon", scene, function (scene) {
-//        console.log(scene)
-//        console.log('-scene----')
-//      // do something with the scene
-//      });
-
-
-  
-SceneLoader.ImportMesh("", "../scenes/", "Zebra.gltf", scene, meshes => {
+  SceneLoader.ImportMesh("", "../scenes/", "Zebra.gltf", scene, meshes => {
     scene.createDefaultCameraOrLight(true, true, true);
     scene.createDefaultEnvironment();
-})
-  
-  // Our built-in 'box' shape.
-//   box = MeshBuilder.CreateBox("box", {size: 2}, scene);
+  });
+};
 
-//   // Move the box upward 1/2 its height
-//   box.position.y = 1;
-
-  // Our built-in 'ground' shape.
-  // MeshBuilder.CreateGround("ground", {width: 6, height: 6}, scene);
-}
-
-/**
- * Will run on every frame render.  We are spinning the box on y-axis.
- */
-const onRender = scene => {
-  if (box !== undefined) {
-    var deltaTimeInMillis = scene.getEngine().getDeltaTime();
-
-    const rpm = 10;
-    box.rotation.y += ((rpm / 60) * Math.PI * 2 * (deltaTimeInMillis / 1000));
-  }
-}
 
 export default () => (
-  <div className = "Viewer">
-    <SceneComponent antialias onSceneReady={onSceneReady} onRender={onRender} id='my-canvas' />
+  <div className="Viewer">
+    <SceneComponent
+      antialias
+      onSceneReady={onSceneReady}
+      id="my-canvas"
+    />
   </div>
-)
+);
