@@ -21,9 +21,13 @@ module.exports = {
                 options: {
                     babelrc: false,
                     presets: ['@babel/preset-env', '@babel/react',{
-                      'plugins': ['@babel/plugin-proposal-class-properties']}]
+                          'plugins': ['@babel/plugin-proposal-class-properties']}]
                 }
             }
+          },
+          {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],
           }
         ]
       },

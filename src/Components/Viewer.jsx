@@ -33,8 +33,6 @@ const onSceneReady = scene => {
 
   
 SceneLoader.ImportMesh("", "../scenes/", "Zebra.gltf", scene, meshes => {
-    console.log(meshes);
-    console.log('--------')
     scene.createDefaultCameraOrLight(true, true, true);
     scene.createDefaultEnvironment();
 })
