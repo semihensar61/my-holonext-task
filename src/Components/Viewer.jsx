@@ -1,5 +1,5 @@
 import React from 'react';
-import { FreeCamera, Vector3, HemisphericLight, MeshBuilder } from '@babylonjs/core';
+import { FreeCamera, Vector3, HemisphericLight, MeshBuilder, SceneLoader } from '@babylonjs/core';
 import SceneComponent from './SceneComponent'; // ^^ point to file we created above or 'babylonjs-hook' NPM.
 
 let box;
@@ -21,15 +21,23 @@ const onSceneReady = scene => {
 
   // Default intensity is 1. Let's dim the light a small amount
   light.intensity = 0.7;
+
+   SceneLoader.Append("../scenes/", "skull.babylon", scene, function (scene) {
+       console.log(scene)
+       console.log('-scene----')
+     // do something with the scene
+     });
+  
+
   
   // Our built-in 'box' shape.
-  box = MeshBuilder.CreateBox("box", {size: 2}, scene);
+//   box = MeshBuilder.CreateBox("box", {size: 2}, scene);
 
-  // Move the box upward 1/2 its height
-  box.position.y = 1;
+//   // Move the box upward 1/2 its height
+//   box.position.y = 1;
 
   // Our built-in 'ground' shape.
-  MeshBuilder.CreateGround("ground", {width: 6, height: 6}, scene);
+  // MeshBuilder.CreateGround("ground", {width: 6, height: 6}, scene);
 }
 
 /**
